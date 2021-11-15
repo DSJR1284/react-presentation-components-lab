@@ -7,20 +7,27 @@ import React, { Component } from 'react'
         super(props)
 
         this.state ={
-            mood: "happy"
+            mood: 'happy'
         }
     }
 
+
+    // handleClick = () => {
+    //     this.setState(prevState => ({
+    //         mood: !prevState.mood
+    //     }))
+    // }
+
     handleClick = () => {
-        this.setState(prevState => ({
-            mood: !prevState.mood
-        }))
+        const newMood = this.state.mood === 'happy' ? 'sad' : 'happy';
+        this.setState({ mood: newMood });
     }
 
     render() {
         return (
-            <div onClick={this.handleClick}>{this.state.mood ? 'happy' : 'sad'}
-            </div>
+            // <div onClick={this.handleClick}>{this.state.mood ? 'happy' : 'sad'}
+                <div onClick={this.handleClick}>{this.state.mood}</div> 
+            // </div>
         )
     }
 }

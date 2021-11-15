@@ -40,7 +40,7 @@ describe('<SimpleComponent />', () => {
   it('when clicked the div should toggle the state to "sad"', () => {
     wrapper.find('div').simulate('click');
     expect(wrapper.state().mood).to.equal(
-      'sad',
+       'sad',
       'Mood state not "sad" after click.'
     );
   });
