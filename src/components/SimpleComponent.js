@@ -26,7 +26,7 @@ import React, { Component } from 'react'
     render() {
         return (
             // <div onClick={this.handleClick}>{this.state.mood ? 'happy' : 'sad'}
-                <div onClick={this.handleClick}>{this.state.mood}</div> 
+            <div onClick={this.handleClick}>{this.state.mood}</div> 
             // </div>
         )
     }
